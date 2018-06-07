@@ -12,14 +12,19 @@ Whatever you see in the admin table is what you get in a CSV.
 
 HTML will be gracefully downgraded to plain text.
 
+## Supports
+
+ * [x] custom post types
+ * [x] custom columns
+ * [x] filtered column views
+ * [x] filtered post status view
+ * [x] users table
+
 ## Features
 
  * Exports WordPress table data as you see it in the admin view
  * Works with Admin Columns Pro table columns
- * Works with filtered column views
- * Works with filtered post status view
  * Better than built-in Admin Columns Pro export functionality
- * Works with users table and custom post types
  
 ## Installation
 
