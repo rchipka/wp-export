@@ -29,7 +29,7 @@ HTML will be gracefully downgraded to plain text.
  
 ## Installation
 
-`include` or `require` export.php and an *Export* button will appear above all admin tables
+`include` or `require` wp-export.php and an *Export* button will appear above all admin tables
 
 ## Todo:
 
