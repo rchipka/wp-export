@@ -4,7 +4,7 @@ Export WordPress users or posts tables (works with custom post types) to CSV
 
 ## What makes it special
 
-Most WordPress CSV table export plugins attempt to manually rebuild the admin tables in CSV format, which casuses issues with filtering, custom columns, and custom fields.
+Most WordPress CSV table export plugins attempt to manually rebuild the admin tables in CSV format, which causes issues with filtering, custom columns, and custom fields.
 
 Instead, this plugin captures the HTML output of the actual admin table, sets `posts_per_page` to unlimited, sanitizes the columns, and converts the result to a CSV.
 
