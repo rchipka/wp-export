@@ -16,6 +16,7 @@ HTML will be gracefully downgraded to plain text.
 
  * [x] custom post types
  * [x] custom columns
+ * [x] sorted column views
  * [x] filtered column views
  * [x] filtered post status view
  * [x] users table
