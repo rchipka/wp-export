@@ -1,6 +1,6 @@
 # wp-export
 
-Export WordPress users or posts tables (works with custom post types) to CSV
+Export WordPress users or posts tables to CSV
 
 ## What makes it special
 
