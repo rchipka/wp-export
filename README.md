@@ -2,6 +2,10 @@
 
 Export WordPress users or posts tables to CSV
 
+ * Exports WordPress table data as you see it in the admin view
+ * Works with Admin Columns Pro table columns
+ * Better than built-in Admin Columns Pro export functionality
+
 ## What makes it special
 
 Most WordPress CSV table export plugins attempt to manually rebuild admin tables in CSV format, which causes issues with filtering, custom columns, and custom fields.
@@ -22,12 +26,6 @@ HTML will be gracefully downgraded to plain text.
  * [x] users table
  * [x] unicode
 
-## Features
-
- * Exports WordPress table data as you see it in the admin view
- * Works with Admin Columns Pro table columns
- * Better than built-in Admin Columns Pro export functionality
- 
 ## Installation
 
 `include` or `require` wp-export.php and an *Export* button will appear above all admin tables
