@@ -56,9 +56,7 @@ add_filter('edit_posts_per_page', function ($per_page, $post_type) {
   }
 
   return 1000;
-}
-
-, 10, 2);
+} , 10, 2);
 
 // 'users_list_table_query_args'
 // 'users_per_page'
@@ -91,9 +89,7 @@ function vbtk_export_posts() {
   echo implode(',', array_map(
   function ($value) {
     return json_encode(strip_tags($value));
-  }
-
-  , $columns)) . "\n";
+  } , $columns)) . "\n";
   preg_match_all('/<tr.+?<\/tr>/si', $result, $rows);
   foreach($rows[0] as $i => $row) {
     if ($i == 0) {
