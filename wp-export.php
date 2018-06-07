@@ -45,6 +45,7 @@ function vbtk_pre_get_post_export( $query ) {
 
 	$query->set( 'number', -1 );
 	$query->set( 'posts_per_page', -1 );
+	$query->set( 'posts_per_archive_page', -1 );
 
 	return $query;
 }
@@ -52,13 +53,28 @@ add_action( 'pre_get_posts', 'vbtk_pre_get_post_export', 11, 1 );
 add_action( 'pre_get_users', 'vbtk_pre_get_post_export', 11, 1 );
 
 
+add_filter( 'edit_posts_per_page', function ($per_page, $post_type) {
+		if ($_REQUEST['action'] !== 'export') {
+			return $per_page;
+		}
+
+		return 1000;
+	}, 10, 2 );
+
+// 'users_list_table_query_args'
+// 'users_per_page'
+
 function vbtk_export_posts() {
 	global $wp_list_table;
+	global $wp_query;
 
+	set_time_limit(300);
 
 	if ($_GET['action'] != 'export') {
 		return;
 	}
+
+	$wp_query->set( 'posts_per_page', -1 );
 
 	$_GET['paged'] = 1;
 
